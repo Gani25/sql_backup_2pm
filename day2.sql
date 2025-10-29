@@ -102,3 +102,17 @@ where actor_id between 10 and 20;
 select * from actor
 where actor_id between 10 and 20 
 or actor_id between 50 and 55;
+
+select * from customer;
+select * from film;
+/*
+1. From customer find how many sotr_id are there
+2. From customer check how many are active
+3. From customer check how many are inactive
+4. From film table find film_id, title, rental_rate, 
+generate rental_rate in INR
+*/
+
+select distinct store_id from customer;
+select film_id, title, rental_rate,
+rental_rate * 85 as rental_rate_inr from film;
